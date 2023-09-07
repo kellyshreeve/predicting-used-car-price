@@ -69,6 +69,8 @@ Variables missing data were all missing less than 15% of observations. Categoric
 ```
 
 # Results and Evaluation
+
+## Exploratory Analysis
  
 <p align="left">
   <img src="/images/pairplot.png"
@@ -88,6 +90,8 @@ There are no clear associations between the dependent variable price and registr
 
 Price has a moderate, positive correlation with registration year (r = 0.37) and power (r = 0.40). Price has a moderate, negative correlation with mileage(r = -0.33). Price is only weakly related to registration month (r = 0.11). The features registration year, power, and mileage are very weakly correlated with each other. Multicollinearity is not an issue.
 
+## Train Results
+
 <p align="left">
   <img src="/images/train_results.png"
   width="450"
@@ -96,6 +100,8 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
 </p>
 
 LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 0.85).  LightGBM took the longest to tune, but this was due to the large number of hyperparameters entered into the grid. LightGBM was able to tune more hyperparameters options than Random Forest and CatBoost in a similar amount of time. Both standard and ridge regression had very quick computations, but they were over $1000 less accurate in their predictions than  LightGBM GBDT. Considering both model score and time, LightGBM GBDT is the best model.
+
+## Test Results
 
 <p align="left">
   <img src="/images/test_results.png"
