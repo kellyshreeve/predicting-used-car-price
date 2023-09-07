@@ -91,7 +91,7 @@ The best binary classifier is a logistic regression with threshold optimized to 
 <p align="left">
   <img src="/images/train_results.png"
   width="450"
-  height="275"
+  height="250"
   alt="Test results of logistic regression with threshold = 0.43">
 </p>
 
