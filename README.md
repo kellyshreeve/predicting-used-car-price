@@ -123,8 +123,14 @@ Power and registration_year are the most important features for predicting price
 
 # Conclusions and Business Application
 
-**Conclusions:** LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). Predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. The most important features were predicting price were power, registration year, postal code, and mileage.  
+## Conclusions
 
-**Business Application:** Rusty Bargain will be able to implement this model in their app and be confident that customers will receive accurate predictions in about 1 second. 
+LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). Predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. The most important features were predicting price were power, registration year, postal code, and mileage.  
 
-**Future Research:** With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
+## Business Application 
+
+Rusty Bargain will be able to implement this model in their app and be confident that customers will receive accurate predictions in about 1 second. 
+
+## Future Research 
+
+With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
