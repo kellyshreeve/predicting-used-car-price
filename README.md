@@ -72,8 +72,8 @@ Variables missing data were all missing less than 15% of observations. Categoric
  
 <p align="left">
   <img src="/images/pairplot.png"
-  width="550"
-  height="550"
+  width="500"
+  height="500"
   alt="sns pair plot of variables colored by receiving benefits">
 </p>
 
@@ -82,7 +82,7 @@ There is clustering in insurance benefits by age.
 <p align="left">
   <img src="/images/correlation_matrix.png" 
   width="650"
-  height="200"
+  height="250"
   alt="Results of binary classification model tuning">
 </p>
 
@@ -90,8 +90,8 @@ The best binary classifier is a logistic regression with threshold optimized to 
 
 <p align="left">
   <img src="/images/train_results.png"
-  width="500"
-  height="250"
+  width="450"
+  height="275"
   alt="Test results of logistic regression with threshold = 0.43">
 </p>
 
@@ -99,8 +99,8 @@ On the test set, the logistic regression with threshold = 0.43 again achieved sc
 
 <p align="left">
   <img src="/images/test_results.png"
-  width="350"
-  height="150"
+  width="250"
+  height="100"
   alt="Results of multi class classification model tuning">
 </p>
 
