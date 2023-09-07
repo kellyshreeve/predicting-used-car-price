@@ -64,7 +64,12 @@ Variables missing data were all missing less than 15% of observations. Categoric
   ├── README.md          
   │
   ├── images
-  │   └── used_car_clipart.png    
+  │   └── correlation_matrix.png
+  │   └── important_features.png 
+  │   └── pairplot.png 
+  │   └── test_results.png 
+  │   └── train_results.png 
+  │   └── used_car_clipart.png     
   │
   └── notebooks  
       └── car_price_analysis.ipynb  
