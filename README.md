@@ -39,7 +39,7 @@
 * *registration_year* - vehicle registration year
 * *gearbox* - gearbox type
 * *power* - power (hp)
-* *model_top125* 125 most frequent vehicle models
+* *model_top125* - 125 most frequent vehicle models
 * *mileage* - mileage (km)
 * *registration_month* - vehicle registration month
 * *fuel_type* - fuel type
