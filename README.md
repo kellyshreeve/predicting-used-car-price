@@ -77,8 +77,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
   alt="sns pair plot of numeric variables">
 </p>
 
-* There are no clear associations between the dependent variable price and registriation_year, power, mileage, or registration_month. 
-* There is also a possible violation of linearity between price and power.
+There are no clear associations between the dependent variable price and registriation_year, power, mileage, or registration_month. There is also a possible violation of linearity between price and power.
 
 <p align="left">
   <img src="/images/correlation_matrix.png" 
@@ -87,8 +86,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
   alt="Correlation heatmap">
 </p>
 
-* Price has a moderate, positive correlation with registration year (r = 0.37) and power (r = 0.40). Price has a moderate, negative correlation with mileage(r = -0.33). Price is only weakly related to registration month (r = 0.11). 
-* The features registration year, power, and mileage are very weakly correlated with each other. Multicollinearity is not an issue.
+Price has a moderate, positive correlation with registration year (r = 0.37) and power (r = 0.40). Price has a moderate, negative correlation with mileage(r = -0.33). Price is only weakly related to registration month (r = 0.11). The features registration year, power, and mileage are very weakly correlated with each other. Multicollinearity is not an issue.
 
 <p align="left">
   <img src="/images/train_results.png"
