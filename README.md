@@ -81,8 +81,8 @@ There is clustering in insurance benefits by age.
 
 <p align="left">
   <img src="/images/correlation_matrix.png" 
-  width="720"
-  height="300"
+  width="650"
+  height="200"
   alt="Results of binary classification model tuning">
 </p>
 
@@ -91,7 +91,7 @@ The best binary classifier is a logistic regression with threshold optimized to 
 <p align="left">
   <img src="/images/train_results.png"
   width="500"
-  height="200"
+  height="250"
   alt="Test results of logistic regression with threshold = 0.43">
 </p>
 
@@ -99,8 +99,8 @@ On the test set, the logistic regression with threshold = 0.43 again achieved sc
 
 <p align="left">
   <img src="/images/test_results.png"
-  width="400"
-  height="100"
+  width="350"
+  height="150"
   alt="Results of multi class classification model tuning">
 </p>
 
@@ -108,8 +108,8 @@ The random forest model with SMOTEENN balanced and weighted classes achieved the
 
 <p align="left">
   <img src="/images/important_features.png"
-  width="600"
-  height="400"
+  width="550"
+  height="350"
   alt="Test results of random forest multi class classification">
 </p>
 
