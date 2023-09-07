@@ -71,7 +71,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
 # Results and Evaluation
  
 <p align="left">
-  <img src="/images/eda.png"
+  <img src="/images/pairplot.png"
   width="600"
   height="600"
   alt="sns pair plot of variables colored by receiving benefits">
@@ -80,16 +80,16 @@ Variables missing data were all missing less than 15% of observations. Categoric
 There is clustering in insurance benefits by age.
 
 <p align="left">
-  <img src="/images/binary_results.png" 
+  <img src="/images/correlation_matrix.png" 
   width="500"
-  height="250"
+  height="300"
   alt="Results of binary classification model tuning">
 </p>
 
 The best binary classifier is a logistic regression with threshold optimized to 0.43. This model achieved an F1, ROC AUC, accuracy, precision, and recall of 1.0 on the cross-validated training data.
 
 <p align="left">
-  <img src="/images/binary_test.png"
+  <img src="/images/train_results.png"
   width="310"
   height="90"
   alt="Test results of logistic regression with threshold = 0.43">
@@ -98,7 +98,7 @@ The best binary classifier is a logistic regression with threshold optimized to 
 On the test set, the logistic regression with threshold = 0.43 again achieved scores of 1.0 across the board. This model is a perfect predictor of whether a person will use insurance benefits or not.
 
 <p align="left">
-  <img src="/images/multi_results.png"
+  <img src="/images/test_results.png"
   width="690"
   height="250"
   alt="Results of multi class classification model tuning">
@@ -107,7 +107,7 @@ On the test set, the logistic regression with threshold = 0.43 again achieved sc
 The random forest model with SMOTEENN balanced and weighted classes achieved the best multi-class classification results, scoring a macro-averaged F1 score of 0.9894.
 
 <p align="left">
-  <img src="/images/multi_test.png"
+  <img src="/images/important_features.png"
   width="510"
   height="100"
   alt="Test results of random forest multi class classification">
@@ -117,8 +117,8 @@ The random forest model with SMOTEENN and class weighting achieved similar resul
 
 # Conclusions and Business Application
 
-**Conclusions:** Of the regression models tested, LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). It was also able to tune more hyperparameters than CatBoost in a similar amount of time. The most important features were predicting price were power, registration year, postal code, and mileage.  
+**Conclusions:** LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). Predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. The most important features were predicting price were power, registration year, postal code, and mileage.  
 
-**Business Application:** Rusty Bargain can be confident that predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. Customers will only have to wait about 1 second for the model to predict the value of their car. This model is speedy and accurate for Rusty Bargain to impliment on their app.  
+**Business Application:** Rusty Bargain will be able to implement this model in their app and be confident that customers will receive accurate predictions in about 1 second. 
 
-**Future Research:** As a class project, this analysis was limited to time constraints. With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
+**Future Research:** With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
