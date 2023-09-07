@@ -74,46 +74,53 @@ Variables missing data were all missing less than 15% of observations. Categoric
   <img src="/images/pairplot.png"
   width="500"
   height="500"
-  alt="sns pair plot of variables colored by receiving benefits">
+  alt="sns pair plot of numeric variables">
 </p>
 
-There is clustering in insurance benefits by age.
+* There are no clear associations between the dependent variable price and registriation_year, power, mileage, or registration_month. 
+* There is also a possible violation of linearity between price and power.
 
 <p align="left">
   <img src="/images/correlation_matrix.png" 
   width="650"
   height="250"
-  alt="Results of binary classification model tuning">
+  alt="Correlation heatmap">
 </p>
 
-The best binary classifier is a logistic regression with threshold optimized to 0.43. This model achieved an F1, ROC AUC, accuracy, precision, and recall of 1.0 on the cross-validated training data.
+* Price has a moderate, positive correlation with registration year (r = 0.37) and power (r = 0.40). Price has a moderate, negative correlation with mileage(r = -0.33). Price is only weakly related to registration month (r = 0.11). 
+* The features registration year, power, and mileage are very weakly correlated with each other. Multicollinearity is not an issue.
 
 <p align="left">
   <img src="/images/train_results.png"
   width="450"
   height="250"
-  alt="Test results of logistic regression with threshold = 0.43">
+  alt="Train results">
 </p>
 
-On the test set, the logistic regression with threshold = 0.43 again achieved scores of 1.0 across the board. This model is a perfect predictor of whether a person will use insurance benefits or not.
+* LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 0.85).  
+* LightGBM took the longest to tune, but this was due to the large number of hyperparameters entered into the grid. LightGBM was able to tune more hyperparameters options than Random Forest and CatBoost in a similar amount of time.  
+* Both standard and ridge regression had very quick computations, but they were over $1000 less accurate in their predictions than  LightGBM GBDT.
+* Considering both model score and time, LightGBM GBDT is the best model.
 
 <p align="left">
   <img src="/images/test_results.png"
   width="250"
   height="100"
-  alt="Results of multi class classification model tuning">
+  alt="Test results">
 </p>
 
-The random forest model with SMOTEENN balanced and weighted classes achieved the best multi-class classification results, scoring a macro-averaged F1 score of 0.9894.
+* LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.85, R^2 = 0.86). The model is likely not overfit. 
+* It was able to make predictions in less than one second.
 
 <p align="left">
   <img src="/images/important_features.png"
   width="550"
   height="350"
-  alt="Test results of random forest multi class classification">
+  alt="Important features plo">
 </p>
 
-The random forest model with SMOTEENN and class weighting achieved similar results on the test set, achieving an F1 macro of 0.9764. This is a well fitting model and can be trusted to predict how many benefits a customer will use.
+* Power and registration_year are the most important features for predicting price. These are followed by postal code, mileage, registration month, and model type. 
+* The least important features are vehicle type, brand, and fuel type.
 
 # Conclusions and Business Application
 
