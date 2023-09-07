@@ -11,7 +11,7 @@
 
 **Purpose:** Train a regression model that accurately and quickly predicts the market value of a new customer's car, minimizing RMSE.
 
-**Techiniques:** One Hot Encoding, Pipelines, GridSearchCV, Gradient Boosting with CatBoost and LightGBM.
+**Techiniques:** One Hot Encoding, Pipelines, GridSearchCV, Linear Regression, Gradient Boosting with CatBoost and LightGBM.
 
 # Installation and Setup
 
@@ -114,3 +114,11 @@ The random forest model with SMOTEENN balanced and weighted classes achieved the
 </p>
 
 The random forest model with SMOTEENN and class weighting achieved similar results on the test set, achieving an F1 macro of 0.9764. This is a well fitting model and can be trusted to predict how many benefits a customer will use.
+
+# Conclusions and Business Application
+
+**Conclusions:** Of the regression models tested, LightGBM GBDT achieved the best model fit (RMSE test = 1663.83). It was also able to tune more hyperparameters than CatBoost in a similar amount of time. The most important features were predicting price were power, registration year, postal code, and mileage.  
+
+**Business Application:** Rusty Bargain can be confident that predictions from this model will offer customers the predicted value of their car within $1,663.83 on average. Customers will only have to wait about 1 second for the model to predict the value of their car. This model is speedy and accurate for Rusty Bargain to impliment on their app.  
+
+**Future Research:** As a class project, this analysis was limited to time constraints. With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
