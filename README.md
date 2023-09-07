@@ -95,10 +95,7 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
   alt="Train results">
 </p>
 
-* LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 0.85).  
-* LightGBM took the longest to tune, but this was due to the large number of hyperparameters entered into the grid. LightGBM was able to tune more hyperparameters options than Random Forest and CatBoost in a similar amount of time.  
-* Both standard and ridge regression had very quick computations, but they were over $1000 less accurate in their predictions than  LightGBM GBDT.
-* Considering both model score and time, LightGBM GBDT is the best model.
+LightGBM achieved the lowest RMSE (RMSE = 1739.38) and highest R^2 value (R^2 = 0.85).  LightGBM took the longest to tune, but this was due to the large number of hyperparameters entered into the grid. LightGBM was able to tune more hyperparameters options than Random Forest and CatBoost in a similar amount of time. Both standard and ridge regression had very quick computations, but they were over $1000 less accurate in their predictions than  LightGBM GBDT. Considering both model score and time, LightGBM GBDT is the best model.
 
 <p align="left">
   <img src="/images/test_results.png"
@@ -107,8 +104,7 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
   alt="Test results">
 </p>
 
-* LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.85, R^2 = 0.86). The model is likely not overfit. 
-* It was able to make predictions in less than one second.
+LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.85, R^2 = 0.86). The model is likely not overfit. It was able to make predictions in less than one second.
 
 <p align="left">
   <img src="/images/important_features.png"
@@ -117,8 +113,7 @@ Price has a moderate, positive correlation with registration year (r = 0.37) and
   alt="Important features plo">
 </p>
 
-* Power and registration_year are the most important features for predicting price. These are followed by postal code, mileage, registration month, and model type. 
-* The least important features are vehicle type, brand, and fuel type.
+Power and registration_year are the most important features for predicting price. These are followed by postal code, mileage, registration month, and model type. The least important features are vehicle type, brand, and fuel type.
 
 # Conclusions and Business Application
 
