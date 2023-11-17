@@ -6,14 +6,24 @@
   alt="Used car clip art">
 </p>
 
-# Project Overview
+## Table of Contents
+
+1. [Project Overview](#overview)
+2. [Installation and Setup](#setup)
+3. [Data](#data)
+4. [Code Structure](#structure)
+5. [Results and Analysis](#results)
+6. [Conclusions](#conclusions)
+7. [Project Code]
+
+# Project Overview<a id='overview'></a>
 **Background:** A regression problem predicting the price of used cars from vehicle make, model, mileage, and other specifications to implement into a customer-facing app.
 
 **Purpose:** Train a regression model that accurately and quickly predicts the market value of a new customer's car, minimizing RMSE.
 
 **Techiniques:** One Hot Encoding, Pipelines, GridSearchCV, Linear Regression, Gradient Boosting with CatBoost and LightGBM.
 
-# Installation and Setup
+# Installation and Setup<a id='setup'></a>
 
 ## Codes and Resources Used
 
@@ -28,9 +38,9 @@
   - <b>Machine Learning</b>: ```sklearn```  
   - <b>Gradient Boosting</b>: ```catboost, lightgbm```
 
-# Data
+# Data<a id='data'></a>
 
-## Source Data
+## Data Sets
 
 *car_data.csv*
 
@@ -58,7 +68,7 @@ The data were provided by TripleTen's Data Science bootcamp. The full dataset is
 
 Variables missing data were all missing less than 15% of observations. Categorical missing values were filled with 'unknown' and quantitative missing values were imputed with medians. Duplicates were cleaned from the dataset.
 
-# Code Structure
+# Code Structure<a id='structure'></a>
 ```
   ├── LICENSE
   ├── README.md          
@@ -75,7 +85,7 @@ Variables missing data were all missing less than 15% of observations. Categoric
       └── car_price_analysis.ipynb  
 ```
 
-# Results and Evaluation
+# Results and Evaluation<a id='results'></a>
 
 ## Exploratory Analysis
  
@@ -128,7 +138,7 @@ LightGBM GBDT achieved a lower RMSE and higher R^2 on the test set (RMSE = 1663.
 
 Power and registration_year are the most important features for predicting price. These are followed by postal code, mileage, registration month, and model type. The least important features are vehicle type, brand, and fuel type.
 
-# Conclusions and Business Application
+# Conclusions and Business Application<a id='conclusions'></a>
 
 ## Conclusions
 
@@ -141,3 +151,5 @@ Rusty Bargain will be able to implement this model in their app and be confident
 ## Future Research 
 
 With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
+
+[View Project Code]
