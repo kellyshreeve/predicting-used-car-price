@@ -14,7 +14,7 @@
 4. [Code Structure](#structure)
 5. [Results and Analysis](#results)
 6. [Conclusions](#conclusions)
-7. [Project Code]
+7. [Project Code](https://github.com/kellyshreeve/predicting-used-car-price/blob/main/notebooks/car_price_analysis.ipynb)
 
 # Project Overview<a id='overview'></a>
 **Background:** A regression problem predicting the price of used cars from vehicle make, model, mileage, and other specifications to implement into a customer-facing app.
@@ -152,4 +152,4 @@ Rusty Bargain will be able to implement this model in their app and be confident
 
 With additional time, more hyperparameters and trees/iterations could be performed to improve model accuracy. Additionally, further data cleaning may improve the accuracy of the results.
 
-[View Project Code]
+[View Project Code](https://github.com/kellyshreeve/predicting-used-car-price/blob/main/notebooks/car_price_analysis.ipynb)
